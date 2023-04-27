@@ -45,7 +45,10 @@
                     <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Inventario/">Inventario</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Cultivo/">Cultivo</a>
+                    <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Cultivo/">Cultivos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Lote/">Lotes</a>
                 </li>
                 <li>
                     <a class="nav-link" href="<?php echo $urlBase; ?>logout.php">Cerrar Sesion</a>

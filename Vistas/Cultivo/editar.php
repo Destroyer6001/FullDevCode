@@ -63,7 +63,7 @@
                     </p>
                     <br>       
                     <p class="boton">
-                        <button type="submit" >Registrar</button>
+                        <button type="submit" >Guardar Cambios</button>
                     </p>
                 </form>
             </div>

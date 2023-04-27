@@ -10,7 +10,6 @@
             $this->servicio = new ServicioCultivos();
         }
 
-
         public function CrearCultivo ($nombre,$usuarioId)
         {
             $this->servicio->Crear($nombre,$usuarioId);
