@@ -54,17 +54,17 @@
                     </div>
                 <?php } ?>
                 <form action="" method="post">
-                    <input type="hidden" 
+                    <input type="hidden"
                     value = "<?php echo $txtId;?>" class="form-control" name="txtid" id="txtid" aria-describedby="helpId" placeholder="">
 
-                    <input type="hidden" 
+                    <input type="hidden"
                     value = "<?php echo $txtUsuarioId;?>" class="form-control" name="txtusuarioid" id="txtusuarioid" aria-describedby="helpId" placeholder="">
 
                     <p class="block">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text"
                         value = "<?php if(isset($nombre)) echo $nombre;?>"
-                        class="form-control" name="nombre" required id="nombre" aria-describedby="helpId" placeholder="Ingrese el nombre de la finca">
+                        class="form-control" name="nombre" required id="nombre" aria-describedby="helpId" placeholder="Ingrese el nombre del lote">
                     </p>
                     <p>
                         <label for="cultivoid" class="form-label">Cultivo</label>
@@ -81,7 +81,7 @@
                         value = "<?php if(isset($tamano)) echo $tamano;?>"
                         class="form-control" name="tamano" required id="tamano" aria-describedby="helpId" placeholder="Ingrese el tamaño del lote">
                     </p>
-                    <br>       
+                    <br>
                     <p class="boton">
                         <button type="submit" >Guardar Cambios</button>
                     </p>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     session_start();
     require_once("c://xampp/htdocs/FullDevCode/Controladores/UsuarioController.php");
@@ -29,6 +29,7 @@
 
             $_SESSION['usuarioId'] = $id;
             $_SESSION['nombre']  = $usuario->getPropietario();
+            $_SESSION['tiempo'] = time();
             $_SESSION['logueado'] = true;
             header("Location:index.php");
         }
@@ -54,7 +55,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="http://localhost/fulldevcode/Css/registrar.css" />
 
 </head>

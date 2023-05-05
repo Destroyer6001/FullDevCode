@@ -5,6 +5,13 @@
     {
         header("Location:".$urlBase."login.php");
     }
+
+    if(isset($_SESSION['tiempo']) && (time() - $_SESSION['tiempo']) > 60)
+    {
+        header("Location:".$urlBase."Inactividad.php");
+    }
+
+    $_SESSION['tiempo'] = time();
 ?>
 
 <!doctype html>
@@ -23,9 +30,9 @@
         src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
         crossorigin="anonymous">
-    </script> 
+    </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js">     
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js">
     </script>
     <script src="https://kit.fontawesome.com/d9353dd905.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://localhost/fulldevcode/Css/styles.css" />
@@ -49,6 +56,9 @@
                 </li>
                 <li>
                     <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Lote/">Lotes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Labor/">Labores</a>
                 </li>
                 <li>
                     <a class="nav-link" href="<?php echo $urlBase; ?>logout.php">Cerrar Sesion</a>

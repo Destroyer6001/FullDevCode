@@ -24,6 +24,7 @@
         {
             $_SESSION['usuarioId'] = $usuariorecuperado['Id'];
             $_SESSION['nombre'] = $usuariorecuperado['Propietario'];
+            $_SESSION['tiempo'] = time();
             $_SESSION['logueado'] = true;
             header("Location:index.php");
         }
@@ -33,7 +34,7 @@
         }
 
     }
-    
+
 
 ?>
 
@@ -53,6 +54,7 @@
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="http://localhost/fulldevcode/Css/login.css" />
     <script src="https://kit.fontawesome.com/d9353dd905.js" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -74,7 +76,7 @@
                             <?php if(isset($mensaje)) { ?>
                                 <div class="alert alert-danger" role="alert">
                                     <strong><?php echo $mensaje ?></strong>
-                                </div> 
+                                </div>
                             <?php } ?>
                             <form action="" method="post">
                                 <p>
@@ -100,7 +102,7 @@
                             <br>
                             <br>
                             <br>
-                            <center><i class="fa-solid fa-user fa-6x"></i></center>              
+                            <center><i class="fa-solid fa-user fa-6x"></i></center>
                             <h1 class="logo">Bienvenidos</h1>
                         </div>
                     </div>

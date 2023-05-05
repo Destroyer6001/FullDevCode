@@ -48,7 +48,7 @@
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text"
                         value = "<?php if(isset($nombre)) echo $nombre;?>"
-                        class="form-control" name="nombre" required id="nombre" aria-describedby="helpId" placeholder="Ingrese el nombre de la finca">
+                        class="form-control" name="nombre" required id="nombre" aria-describedby="helpId" placeholder="Ingrese el nombre del lote">
                     </p>
                     <p>
                         <label for="idcultivo" class="form-label">Cultivo</label>
@@ -65,7 +65,7 @@
                         value = "<?php if(isset($tamano)) echo $tamano;?>"
                         class="form-control" name="tamano" required id="tamano" aria-describedby="helpId" placeholder="Ingrese el tamaño del lote">
                     </p>
-                    <br>       
+                    <br>
                     <p class="boton">
                         <button type="submit" >Registrar</button>
                     </p>
