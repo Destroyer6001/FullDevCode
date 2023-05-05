@@ -6,7 +6,7 @@
         header("Location:".$urlBase."login.php");
     }
 
-    if(isset($_SESSION['tiempo']) && (time() - $_SESSION['tiempo']) > 60)
+    if(isset($_SESSION['tiempo']) && (time() - $_SESSION['tiempo']) > 300)
     {
         header("Location:".$urlBase."Inactividad.php");
     }
