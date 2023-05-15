@@ -19,7 +19,7 @@
     <div class="card" id="">
         <div class="content">
             <div class="title">
-            <center><h1 id="Titulo"><strong>Index</strong></h1></center>
+            <center><h1 id="Titulo"><strong>Cultivos</strong></h1></center>
             </div>
             <div class="card-body">
                 <a name="" id="btncrear" class="btn" href="crear.php" role="button">Agegrar</a>

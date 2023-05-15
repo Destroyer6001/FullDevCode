@@ -2,7 +2,7 @@
 <?php
     require_once("c://xampp/htdocs/FullDevCode/Controladores/LotesController.php");
 
-    $Lote = new LotesController(); 
+    $Lote = new LotesController();
     $usuarioId = $_SESSION['usuarioId'];
     $listadolotes = $Lote->ListarLotes($usuarioId);
 
@@ -19,7 +19,7 @@
 <div class="card" id="">
         <div class="content">
             <div class="title">
-            <center><h1 id="Titulo"><strong>Index</strong></h1></center>
+            <center><h1 id="Titulo"><strong>Lotes</strong></h1></center>
             </div>
             <div class="card-body">
                 <a name="" id="btncrear" class="btn" href="crear.php" role="button">Agegrar</a>

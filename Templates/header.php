@@ -61,6 +61,9 @@
                     <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Labor/">Labores</a>
                 </li>
                 <li>
+                    <a class="nav-link" href="<?php echo $urlBase; ?>Vistas/Herramienta/">Herramientas</a>
+                </li>
+                <li>
                     <a class="nav-link" href="<?php echo $urlBase; ?>logout.php">Cerrar Sesion</a>
                 </li>
             </ul>
